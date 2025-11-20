@@ -187,3 +187,25 @@ Pour partager l'exécutable :
 3. Partager le lien
 
 **Lien vers l'exécutable** : [Télécharger publish.zip depuis Google Drive](https://drive.google.com/drive/folders/17lOT6GD4lxfA1mTBrUEyeT3qtIU1D3-x?usp=sharing)
+
+---
+
+## Améliorations apportées (Optionnel)
+
+### a) Support multilingue
+L'application supporte maintenant 3 langues :
+- **Anglais** (English) - langue par défaut
+- **Français** (French) 
+- **Espagnol** (Spanish)
+
+Le sélecteur de langue est disponible en bas de chaque page. La langue choisie est conservée via un cookie.
+
+### b) Corrections de bugs
+Deux bugs ont été corrigés dans la classe `Cart` :
+1. **Calcul du total** : Le total du panier prend maintenant en compte la quantité de chaque produit
+2. **Recherche de produit** : Protection contre les erreurs quand un produit n'est pas trouvé dans le panier
+
+### Commits significatifs
+1. **Amélioration LanguageService** : Gestion explicite de la langue anglaise
+2. **Correction des bugs Cart** : Fix du calcul du total et de la recherche de produits
+3. **Documentation** : Mise à jour du README avec les améliorations
