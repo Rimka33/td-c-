@@ -186,4 +186,4 @@ Pour partager l'exécutable :
 2. Uploader sur Google Drive, OneDrive, ou autre service de stockage
 3. Partager le lien
 
-**Lien à ajouter** : [À compléter avec le lien vers Google Drive, OneDrive, etc.]
+**Lien vers l'exécutable** : [Télécharger publish.zip depuis Google Drive](https://drive.google.com/drive/folders/17lOT6GD4lxfA1mTBrUEyeT3qtIU1D3-x?usp=sharing)
