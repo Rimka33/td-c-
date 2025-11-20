@@ -61,9 +61,8 @@ namespace P2FixAnAppDotNetCode.Models
         /// </summary>
         public double GetTotalValue()
         {
-            // TODO implement the method
-            // DONE OD
-            return GetCartLineList().Sum(x => x.Product.Price);
+            // Calcul du total en multipliant le prix par la quantité pour chaque produit
+            return GetCartLineList().Sum(x => x.Product.Price * x.Quantity);
         }
 
         /// <summary>
@@ -84,9 +83,9 @@ namespace P2FixAnAppDotNetCode.Models
         /// </summary>
         public Product FindProductInCartLines(int productId)
         {
-            // TODO implement the method
-            // DONE OD
-            return GetCartLineList().Where(x => x.Product.Id == productId).FirstOrDefault().Product;
+            // Recherche du produit avec gestion du cas où il n'est pas trouvé
+            var cartLine = GetCartLineList().Where(x => x.Product.Id == productId).FirstOrDefault();
+            return cartLine?.Product;
         }
 
         /// <summary>
